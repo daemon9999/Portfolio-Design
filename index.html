@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="portfolio" id="portfolio">
+        <div class="sidebar">
+          <div class="profile">
+            <img src="myphoto.jpg" alt="" />
+            <div class="user">
+              <div class="name">Murad Masimli</div>
+              <div class="instagram">@_.mur6d._</div>
+            </div>
+          </div>
+          <div class="actions">
+            <ul>
+              <li>
+                <a href="">
+                    <img src="./icons/general.png" alt="" />
+                    <img src="./icons/general-hover.png" alt="" />
+                    <span>General</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./icons/password.png" alt="" />
+                  <img src="./icons/password-hover.png" alt="" />
+                  <span>Password</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./icons/invitation.png" alt="" />
+                  <img src="./icons/invitation-hover.png" alt="" />
+                  <span>Invitations</span>
+                </a>
+              </li>
+              <li class="active">
+                <a href="">
+                  <img src="./icons/billing.png" alt="" />
+                  <span>Billing</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./icons/app.png" alt="" />
+                  <img src="./icons/app-hover.png" alt="" />
+                  <span>Apps</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="log-out">
+            <a href="#index" onclick="exit()">
+              <img src="./icons/logout.png" alt="" class="normal" />
+              <img src="./icons/logout-hover.png" alt="" class="hover" />
+              <div class="text">Log out</div>
+            </a>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content-header"><h2>Billing</h2></div>
+          <div class="content-order">
+            <div class="left">
+              <div class="header">
+                <div class="order-history">Order History</div>
+                <div class="manage">
+                  Manage billing information and view receips
+                </div>
+              </div>
+              <div class="orders">
+                <table>
+                  <tr>
+                    <th>Date</th>
+                    <th>Type</th>
+                    <th>Receipt</th>
+                  </tr>
+                  <tr>
+                    <a href="">
+                      <td class="date">Oct. 21, 2021</td>
+                      <td class="type">Pro Annual</td>
+                      <td class="receipt"><button>Download</button></td>
+                    </a>
+                  </tr>
+                  <tr>
+                    <a href="">
+                      <td class="date">Aug. 21, 2021</td>
+                      <td class="type">Pro Portfolio</td>
+                      <td class="receipt"><button>Download</button></td>
+                    </a>
+                  </tr>
+                  <tr>
+                    <a href="">
+                      <td class="date">July. 21, 2021</td>
+                      <td class="type">Sponsored Post</td>
+                      <td class="receipt"><button>Download</button></td>
+                    </a>
+                  </tr>
+                  <tr>
+                    <a href="">
+                      <td class="date">Jun. 21, 2021</td>
+                      <td class="type">Sponsored Post</td>
+                      <td class="receipt"><button>Download</button></td>
+                    </a>
+                  </tr>
+                </table>
+              </div>
+              <div class="load-more">
+                <a href="">Load more</a>
+              </div>
+              <div class="payment">
+                <div class="method">Payment Method</div>
+                <div class="manage">Manage billing information and view receips</div>
+                <div class="visa">
+                    <img src="./icons/visa.svg" alt="">
+                    <div class="ending-date">Visa ending in 2255</div>
+                    <a href=""><button class="remove">Remove</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+                <div class="current-plan">
+                    <div class="text">Your plan</div>
+                    <div class="current-type">Pro Annual</div>
+                    <div class="renew-date">Renews on Nov. 2021</div>
+                    <a href="" class="cancel">Cancel subscription</a>
+                </div>
+            </div>
+          </div>
+          <div class="content-payment"></div>
+        </div>
+      </div>
+      <div class="enter" id="enter">
+        <a href="#" onclick="enter()">Enter</a> 
+      </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>
